@@ -1,0 +1,252 @@
+[
+  {
+    "id": "VA-001",
+    "name": "Cornerstone Income VA",
+    "type": "variable_annuity",
+    "risk_level": 2,
+    "requirements": {
+      "min_age": 45,
+      "max_age": 80,
+      "min_time_horizon_years": 7,
+      "max_liquidity_need_years": 7,
+      "min_net_worth_usd": 150000,
+      "min_liquid_assets_usd": 50000,
+      "allowed_risk_tolerances": ["conservative", "moderate_conservative", "moderate"],
+      "allowed_objectives": ["income", "capital_preservation", "growth_and_income"],
+      "min_experience": "limited"
+    },
+    "economics": {
+      "expense_ratio_pct": 1.25,
+      "commission_pct": 5.5,
+      "surrender_period_years": 7,
+      "has_living_benefit_rider": true,
+      "rider_cost_pct": 1.15
+    },
+    "description": "Conservative variable annuity with guaranteed lifetime withdrawal benefit. Aimed at pre-retirees seeking income certainty."
+  },
+  {
+    "id": "VA-002",
+    "name": "Heritage Balanced VA",
+    "type": "variable_annuity",
+    "risk_level": 3,
+    "requirements": {
+      "min_age": 40,
+      "max_age": 75,
+      "min_time_horizon_years": 10,
+      "max_liquidity_need_years": 10,
+      "min_net_worth_usd": 250000,
+      "min_liquid_assets_usd": 75000,
+      "allowed_risk_tolerances": ["moderate_conservative", "moderate", "moderate_aggressive"],
+      "allowed_objectives": ["growth_and_income", "growth"],
+      "min_experience": "limited"
+    },
+    "economics": {
+      "expense_ratio_pct": 1.45,
+      "commission_pct": 6.5,
+      "surrender_period_years": 8,
+      "has_living_benefit_rider": true,
+      "rider_cost_pct": 1.25
+    },
+    "description": "Balanced sub-account allocation with optional income rider. Longer surrender period in exchange for higher upfront credit."
+  },
+  {
+    "id": "VA-003",
+    "name": "Apex Growth VA",
+    "type": "variable_annuity",
+    "risk_level": 4,
+    "requirements": {
+      "min_age": 35,
+      "max_age": 65,
+      "min_time_horizon_years": 15,
+      "max_liquidity_need_years": 12,
+      "min_net_worth_usd": 350000,
+      "min_liquid_assets_usd": 100000,
+      "allowed_risk_tolerances": ["moderate", "moderate_aggressive", "aggressive"],
+      "allowed_objectives": ["growth", "speculation"],
+      "min_experience": "good"
+    },
+    "economics": {
+      "expense_ratio_pct": 1.65,
+      "commission_pct": 7.0,
+      "surrender_period_years": 10,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Equity-heavy sub-account VA targeting long-horizon accumulation. No income rider."
+  },
+  {
+    "id": "VA-004",
+    "name": "Summit Aggressive VA",
+    "type": "variable_annuity",
+    "risk_level": 5,
+    "requirements": {
+      "min_age": 30,
+      "max_age": 60,
+      "min_time_horizon_years": 20,
+      "max_liquidity_need_years": 15,
+      "min_net_worth_usd": 500000,
+      "min_liquid_assets_usd": 150000,
+      "allowed_risk_tolerances": ["moderate_aggressive", "aggressive"],
+      "allowed_objectives": ["growth", "speculation"],
+      "min_experience": "good"
+    },
+    "economics": {
+      "expense_ratio_pct": 1.85,
+      "commission_pct": 7.5,
+      "surrender_period_years": 10,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Concentrated growth sub-accounts including emerging markets and small-cap. High surrender penalty in early years."
+  },
+  {
+    "id": "VA-005",
+    "name": "Sentinel Senior Income VA",
+    "type": "variable_annuity",
+    "risk_level": 2,
+    "requirements": {
+      "min_age": 60,
+      "max_age": 85,
+      "min_time_horizon_years": 5,
+      "max_liquidity_need_years": 5,
+      "min_net_worth_usd": 200000,
+      "min_liquid_assets_usd": 75000,
+      "allowed_risk_tolerances": ["conservative", "moderate_conservative"],
+      "allowed_objectives": ["income", "capital_preservation"],
+      "min_experience": "none"
+    },
+    "economics": {
+      "expense_ratio_pct": 1.55,
+      "commission_pct": 6.0,
+      "surrender_period_years": 6,
+      "has_living_benefit_rider": true,
+      "rider_cost_pct": 1.35
+    },
+    "description": "Marketed at seniors — guaranteed minimum withdrawal benefit. Note: rider cost compounds total annual drag above 2.9%."
+  },
+  {
+    "id": "MF-001",
+    "name": "Treasury Reserve Fund",
+    "type": "mutual_fund",
+    "risk_level": 1,
+    "requirements": {
+      "min_age": 18,
+      "max_age": null,
+      "min_time_horizon_years": 0,
+      "max_liquidity_need_years": 0,
+      "min_net_worth_usd": 0,
+      "min_liquid_assets_usd": 1000,
+      "allowed_risk_tolerances": ["conservative", "moderate_conservative", "moderate", "moderate_aggressive", "aggressive"],
+      "allowed_objectives": ["capital_preservation", "income"],
+      "min_experience": "none"
+    },
+    "economics": {
+      "expense_ratio_pct": 0.12,
+      "commission_pct": 0,
+      "surrender_period_years": 0,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Short-duration Treasuries. Liquid, low-cost, no surrender penalty."
+  },
+  {
+    "id": "MF-002",
+    "name": "Core Bond Index Fund",
+    "type": "mutual_fund",
+    "risk_level": 2,
+    "requirements": {
+      "min_age": 18,
+      "max_age": null,
+      "min_time_horizon_years": 3,
+      "max_liquidity_need_years": 2,
+      "min_net_worth_usd": 0,
+      "min_liquid_assets_usd": 2500,
+      "allowed_risk_tolerances": ["conservative", "moderate_conservative", "moderate"],
+      "allowed_objectives": ["income", "capital_preservation", "growth_and_income"],
+      "min_experience": "none"
+    },
+    "economics": {
+      "expense_ratio_pct": 0.08,
+      "commission_pct": 0,
+      "surrender_period_years": 0,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Investment-grade bond index. Negligible expense ratio, full liquidity."
+  },
+  {
+    "id": "MF-003",
+    "name": "Balanced Allocation Fund",
+    "type": "mutual_fund",
+    "risk_level": 3,
+    "requirements": {
+      "min_age": 18,
+      "max_age": null,
+      "min_time_horizon_years": 5,
+      "max_liquidity_need_years": 3,
+      "min_net_worth_usd": 0,
+      "min_liquid_assets_usd": 5000,
+      "allowed_risk_tolerances": ["moderate_conservative", "moderate", "moderate_aggressive"],
+      "allowed_objectives": ["growth_and_income", "growth", "income"],
+      "min_experience": "none"
+    },
+    "economics": {
+      "expense_ratio_pct": 0.15,
+      "commission_pct": 0,
+      "surrender_period_years": 0,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "60/40 equity-bond mix. Single-fund retirement default."
+  },
+  {
+    "id": "MF-004",
+    "name": "Total Stock Market Index",
+    "type": "mutual_fund",
+    "risk_level": 4,
+    "requirements": {
+      "min_age": 18,
+      "max_age": null,
+      "min_time_horizon_years": 7,
+      "max_liquidity_need_years": 5,
+      "min_net_worth_usd": 0,
+      "min_liquid_assets_usd": 5000,
+      "allowed_risk_tolerances": ["moderate", "moderate_aggressive", "aggressive"],
+      "allowed_objectives": ["growth", "growth_and_income"],
+      "min_experience": "limited"
+    },
+    "economics": {
+      "expense_ratio_pct": 0.04,
+      "commission_pct": 0,
+      "surrender_period_years": 0,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Broad US equity index. Industry-low expense ratio."
+  },
+  {
+    "id": "MF-005",
+    "name": "Emerging Markets Equity Fund",
+    "type": "mutual_fund",
+    "risk_level": 5,
+    "requirements": {
+      "min_age": 18,
+      "max_age": null,
+      "min_time_horizon_years": 10,
+      "max_liquidity_need_years": 8,
+      "min_net_worth_usd": 50000,
+      "min_liquid_assets_usd": 10000,
+      "allowed_risk_tolerances": ["moderate_aggressive", "aggressive"],
+      "allowed_objectives": ["growth", "speculation"],
+      "min_experience": "good"
+    },
+    "economics": {
+      "expense_ratio_pct": 0.55,
+      "commission_pct": 0,
+      "surrender_period_years": 0,
+      "has_living_benefit_rider": false,
+      "rider_cost_pct": 0
+    },
+    "description": "Single-region EM exposure. Higher volatility, requires investor experience."
+  }
+]

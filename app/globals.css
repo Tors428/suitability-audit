@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surface — warm cream / paper */
+  --bg: #f4ecdd;             /* page — warm cream */
+  --surface: #faf3e4;        /* cards — slightly lighter cream */
+  --hairline: #e2d3b7;       /* 1px borders, soft tan */
+  --hairline-strong: #c9b393;
+
+  /* Type — deep editorial browns */
+  --ink: #3a2616;            /* primary text — espresso brown */
+  --ink-2: #6e5135;          /* secondary text — walnut */
+  --ink-3: #a18866;          /* tertiary / labels — muted taupe */
+
+  /* Severity — warm-palette versions */
+  --sev-high: #94331b;       /* burnt sienna */
+  --sev-high-bg: #f5e1d2;
+  --sev-med: #8a5a1a;        /* dark amber */
+  --sev-med-bg: #f3e2c2;
+  --sev-ok: #4f6534;         /* olive moss */
+  --sev-ok-bg: #e8e8c8;
+
+  --accent: #3a2616;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-sev-high: var(--sev-high);
+  --color-sev-high-bg: var(--sev-high-bg);
+  --color-sev-med: var(--sev-med);
+  --color-sev-med-bg: var(--sev-med-bg);
+  --color-sev-ok: var(--sev-ok);
+  --color-sev-ok-bg: var(--sev-ok-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Numerals get mono for tabular alignment without being spreadsheet-y. */
+.num {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "zero";
+  letter-spacing: -0.01em;
+}
+
+/* Eyebrow label — uppercase, wide tracked, small */
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+/* Hairline divider */
+.hairline {
+  border-color: var(--hairline);
 }

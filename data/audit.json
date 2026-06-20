@@ -1,0 +1,164 @@
+{
+  "generated_at": "1970-01-01T00:00:00.000Z",
+  "n_clients": 5000,
+  "n_receipts": 5000,
+  "findings": [
+    {
+      "protected_attribute": "age_band",
+      "cohort": "65_plus",
+      "stated_risk_tolerance": "aggressive",
+      "cohort_recommendation_distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.05660377358490566,
+        "5": 0.03773584905660377,
+        "none": 0.9056603773584906
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.2748091603053435,
+        "5": 0.26145038167938933,
+        "none": 0.4637404580152672
+      },
+      "selection_rate_ratio": 0.176,
+      "n_cohort": 53,
+      "n_baseline": 524,
+      "severity": "high",
+      "rationale": "Conditional on stated risk tolerance \"aggressive\", clients in cohort age_band=65_plus received a suitable recommendation at 9.4% vs 53.6% for the rest of the population (selection-rate ratio 0.18, below the four-fifths threshold of 0.80)."
+    },
+    {
+      "protected_attribute": "zip_cluster",
+      "cohort": "d",
+      "stated_risk_tolerance": "moderate_aggressive",
+      "cohort_recommendation_distribution": {
+        "1": 0.006535947712418301,
+        "2": 0,
+        "3": 0.20261437908496732,
+        "4": 0.1568627450980392,
+        "5": 0.0457516339869281,
+        "none": 0.5882352941176471
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0.008557457212713936,
+        "2": 0,
+        "3": 0.37163814180929094,
+        "4": 0.3533007334963325,
+        "5": 0.06601466992665037,
+        "none": 0.20048899755501223
+      },
+      "selection_rate_ratio": 0.515,
+      "n_cohort": 153,
+      "n_baseline": 818,
+      "severity": "high",
+      "rationale": "Conditional on stated risk tolerance \"moderate_aggressive\", clients in cohort zip_cluster=d received a suitable recommendation at 41.2% vs 80.0% for the rest of the population (selection-rate ratio 0.52, below the four-fifths threshold of 0.80)."
+    },
+    {
+      "protected_attribute": "zip_cluster",
+      "cohort": "d",
+      "stated_risk_tolerance": "aggressive",
+      "cohort_recommendation_distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.09876543209876543,
+        "5": 0.19753086419753085,
+        "none": 0.7037037037037037
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.28024193548387094,
+        "5": 0.24798387096774194,
+        "none": 0.4717741935483871
+      },
+      "selection_rate_ratio": 0.561,
+      "n_cohort": 81,
+      "n_baseline": 496,
+      "severity": "high",
+      "rationale": "Conditional on stated risk tolerance \"aggressive\", clients in cohort zip_cluster=d received a suitable recommendation at 29.6% vs 52.8% for the rest of the population (selection-rate ratio 0.56, below the four-fifths threshold of 0.80)."
+    },
+    {
+      "protected_attribute": "age_band",
+      "cohort": "65_plus",
+      "stated_risk_tolerance": "moderate_aggressive",
+      "cohort_recommendation_distribution": {
+        "1": 0.054945054945054944,
+        "2": 0,
+        "3": 0.38461538461538464,
+        "4": 0.08791208791208792,
+        "5": 0,
+        "none": 0.4725274725274725
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0.003409090909090909,
+        "2": 0,
+        "3": 0.3409090909090909,
+        "4": 0.3465909090909091,
+        "5": 0.06931818181818182,
+        "none": 0.23977272727272728
+      },
+      "selection_rate_ratio": 0.694,
+      "n_cohort": 91,
+      "n_baseline": 880,
+      "severity": "medium",
+      "rationale": "Conditional on stated risk tolerance \"moderate_aggressive\", clients in cohort age_band=65_plus received a suitable recommendation at 52.7% vs 76.0% for the rest of the population (selection-rate ratio 0.69, below the four-fifths threshold of 0.80)."
+    },
+    {
+      "protected_attribute": "age_band",
+      "cohort": "65_plus",
+      "stated_risk_tolerance": "moderate",
+      "cohort_recommendation_distribution": {
+        "1": 0.07731958762886598,
+        "2": 0.17525773195876287,
+        "3": 0.41237113402061853,
+        "4": 0,
+        "5": 0,
+        "none": 0.33505154639175255
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0.007905138339920948,
+        "2": 0.17944664031620552,
+        "3": 0.7201581027667984,
+        "4": 0,
+        "5": 0,
+        "none": 0.09249011857707509
+      },
+      "selection_rate_ratio": 0.733,
+      "n_cohort": 194,
+      "n_baseline": 1265,
+      "severity": "medium",
+      "rationale": "Conditional on stated risk tolerance \"moderate\", clients in cohort age_band=65_plus received a suitable recommendation at 66.5% vs 90.8% for the rest of the population (selection-rate ratio 0.73, below the four-fifths threshold of 0.80)."
+    },
+    {
+      "protected_attribute": "zip_cluster",
+      "cohort": "d",
+      "stated_risk_tolerance": "moderate",
+      "cohort_recommendation_distribution": {
+        "1": 0.00425531914893617,
+        "2": 0.3404255319148936,
+        "3": 0.3617021276595745,
+        "4": 0,
+        "5": 0,
+        "none": 0.2936170212765957
+      },
+      "baseline_recommendation_distribution": {
+        "1": 0.0196078431372549,
+        "2": 0.14787581699346405,
+        "3": 0.7401960784313726,
+        "4": 0,
+        "5": 0,
+        "none": 0.0923202614379085
+      },
+      "selection_rate_ratio": 0.778,
+      "n_cohort": 235,
+      "n_baseline": 1224,
+      "severity": "medium",
+      "rationale": "Conditional on stated risk tolerance \"moderate\", clients in cohort zip_cluster=d received a suitable recommendation at 70.6% vs 90.8% for the rest of the population (selection-rate ratio 0.78, below the four-fifths threshold of 0.80)."
+    }
+  ],
+  "headline": "6 disparate-impact patterns detected (3 high-severity, 3 medium-severity)."
+}
