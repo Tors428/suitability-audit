@@ -1,11 +1,17 @@
 # Suitability Audit
 
+**Live:** https://suitability-audit.vercel.app
+
 A bias-detection demo for FINRA Rule 2111 / Rule 2330 suitability
 decisions. 5,000 synthetic clients are scored against a 10-product
 universe by a deterministic rules engine. A separate audit layer joins
 the resulting receipts to protected attributes (kept hidden from the
 engine) and surfaces disparate-impact patterns using a four-fifths-rule
 analog.
+
+Start at the [bias dashboard](https://suitability-audit.vercel.app/dashboard)
+for the audit summary, or [browse the 5,000 receipts](https://suitability-audit.vercel.app/receipts)
+to drill into individual decisions.
 
 ## What this is
 
@@ -216,4 +222,4 @@ the shape of the product shelf the engine is matching against.
 - [x] Phase 4 — Dashboard UI
 - [x] Phase 5 — Receipt UI
 - [x] Phase 6 — Appeal artifact
-- [ ] Phase 7 — Landing copy, deploy
+- [x] Phase 7 — Deploy (live on Vercel)
